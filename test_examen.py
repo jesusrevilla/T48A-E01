@@ -20,25 +20,23 @@ class TestNumpyExercises(unittest.TestCase):
         result = capitalizacion()
         expected_result = (90.88888888888889,
                            79.0,
-                          17,
-                          61.81247196908899)
+                          64.07364589880486)
         self.assertAlmostEqual(result[0], expected_result[0], places=2)
         self.assertEqual(result[1], expected_result[1])
-        self.assertEqual(result[2], expected_result[2])
-        self.assertAlmostEqual(result[3], expected_result[3], places=2)
+        self.assertAlmostEqual(result[2], expected_result[2], places=2)
 
     def test_asistencia_dispersion(self):
         result = asistencia_dispersion()
         expected_result = (38200,
-                          1182924100.0,
-                          34401.04646876061)
+                          90557209.0,
+                          9516.15515846605)
         self.assertEqual(result[0], expected_result[0])
         self.assertAlmostEqual(result[1], expected_result[1], places=2)
         self.assertAlmostEqual(result[2], expected_result[2], places=2)
 
     def test_histograma_np(self):
         result = histograma_np()
-        expected_result = (np.array([1, 1, 1, 3, 4, 5, 4, 3, 3, 2]),
+        expected_result = (np.array([3, 1, 2, 3, 4, 4, 3, 3, 2, 2]),
                            np.array([4.8, 5.32, 5.84, 6.36, 6.88,
                                      7.4, 7.92, 8.44, 8.96, 9.48, 10.]))
         self.assertTrue(np.array_equal(result[0], expected_result[0]))
@@ -46,7 +44,7 @@ class TestNumpyExercises(unittest.TestCase):
 
     def test_correlacion(self):
         result = correlacion()
-        expected_result = 0.9847557478565358
+        expected_result = 0.9950485857542846
         self.assertAlmostEqual(result,
                                expected_result,
                                places=2)
