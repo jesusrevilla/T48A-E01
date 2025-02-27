@@ -51,7 +51,7 @@ def correlacion():
     return r
 
 # 5. Probabilidades de ladrones detenidos
-def calcular_probabilidades():
+def probabilidad_condicional():
     hombres_primera_ofensa = 60
     hombres_reincidente = 70
     mujeres_primera_ofensa = 44
