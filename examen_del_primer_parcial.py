@@ -120,7 +120,7 @@ def probabilidad_condicional():
     muj = 44 + 76
     total = hom + muj
     p_hombre = hom / total
-    p_hom_reinc = 60 / hom
+    p_hom_reinc = 60 / total
     p_po_hombre = p_hom_reinc/p_hombre
     return (p_hombre, p_po_hombre)
 probabilidad_condicional()
