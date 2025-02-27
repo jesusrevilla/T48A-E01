@@ -42,7 +42,6 @@ def capitalizacion():
     mediana = np.median(datos)
     desv_est = np.std(datos)
     return (media, mediana, desv_est)
-    pass
 
 """2.    La aistencia a los 10 últimos partidos en casa de las Águilas de Baltimore fue la siguiente:
 
@@ -64,7 +63,6 @@ def asistencia_dispersion():
     varianza=np.var(datos2)
     desv_est=np.std(datos2)
     return (rango,varianza,desv_est)
-    pass
 
 """3.    Genere un histograma de las siguientes calificaciones en el examen parcial:
 
@@ -77,7 +75,6 @@ def histograma_np():
     datos3=[7.9, 7.8, 7.8, 6.7, 7.6, 8.7, 8.5, 7.3, 6.6, 9.9, 8.4, 7.2, 6.6, 5.7, 9.4, 8.4, 7.2, 6.3, 5.1, 4.8, 5.0, 6.1, 7.1, 8.2, 9.3, 10.0, 8.9]
     histograma=np.histogram(datos3,bins=10)
     return histograma
-    pass
 
 """4.    Analiza la correlación entre los datos de Tamaño y Precio y
 
@@ -105,7 +102,6 @@ def correlacion():
 
     coef_pearson = np.corrcoef(tamanio, precio)[0, 1]
     return coef_pearson
-    pass
 
 """5.        La tienda de departamentso Friendly ha sido objeto de muchos robos durante el último mes; pero debido al aumento a las medidas de seguridad, se han detenido 250 ladrones. Se registró el sexo de cada ladrón; también se anotó si se trataba de un primer delito o era reincidente. Los datos se resumen en la siguiente tabla.
 
@@ -131,7 +127,6 @@ def probabilidad_condicional():
     p_po_hombre = 60 / total_hombres
 
     return (p_hombre, p_po_hombre)
-    pass
 
 """Contesta las siguientes preguntas
 
@@ -155,17 +150,13 @@ Regresa cadenas de texto con tu respuesta.
 def problema_especifico():
     return """Un cliente tiene que mandar todos los días una base de datos con sus clientes, para que los dé de alta en supabase,
     el cliente puede manda la misma lista 3 días o puede que dé de baja a 5 personas y así"""
-    pass
 
 def importancia():
     return "es importante resolver este problema para que los datos de sus clientes no sean borrados sino filtrados"
-    pass
 
 def objetivos():
     return  """Los objetivos principales de este anteproyecto, es que, con las bases que vamos a ver en minería de datos, se logre hacer una automatización mediante un flujo
     de datos como gmail(correo), replit(procesamiento de los datos) y supabase (para el amacenamiento de los datos)"""
-    pass
 
 def tipo_de_datos():
     return "Correo en el que se van a recibir los datos, una cuenta de googleapi (client2.0auth) para identificar el correo, que datos van a venir en el csv, un correo y una contraseña para darlos de alta en supabase al igual que las API KEYS del sitio"
-    pass
