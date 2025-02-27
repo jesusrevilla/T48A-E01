@@ -8,7 +8,6 @@ Original file is located at
 """
 
 import numpy as np
-import matplotlib.pyplot as plt
 
 # Importante: verifica que tu nombre y número de matrícula esten correctos
 nombre = "Sebastián Rodríguez Torres"
@@ -76,7 +75,7 @@ Nota: regrese el histograma generado con la función de numpy con 10 bins, no ge
 
 def histograma_np():
     arreglo = np.array([7.9, 7.8, 7.8, 6.7, 7.6, 8.7, 8.5, 7.3, 6.6, 9.9, 8.4, 7.2, 6.6, 5.7, 9.4, 8.4, 7.2, 6.3, 5.1, 4.8, 5.0, 6.1, 7.1, 8.2, 9.3, 10.0, 8.9])
-    histograma = plt.hist(arreglo, bins=10)  # bins define el número de barras en el histograma
+    histograma = np.histogram(arreglo, bins=10)  
     return histograma
 
 """4.    Analiza la correlación entre los datos de Tamaño y Precio y
