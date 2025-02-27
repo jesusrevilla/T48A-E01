@@ -98,7 +98,7 @@ Regresa el coeficiente de Pearson
 def correlacion():
     tamaño = np.array([100, 120, 140, 160, 180, 200, 220, 240, 260, 280])
     precio = np.array([1305710, 1658277, 1894167, 2136552, 2298267, 2553624, 2780503, 3289726, 3472743, 3779477])
-    correlacion = np.corrcoef(tamaño, precio)
+    correlacion = np.corrcoef(tamaño, precio)[0, 1]
     return correlacion
 
 """5.        La tienda de departamentso Friendly ha sido objeto de muchos robos durante el último mes; pero debido al aumento a las medidas de seguridad, se han detenido 250 ladrones. Se registró el sexo de cada ladrón; también se anotó si se trataba de un primer delito o era reincidente. Los datos se resumen en la siguiente tabla.
