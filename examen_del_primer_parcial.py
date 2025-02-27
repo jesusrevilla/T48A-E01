@@ -50,7 +50,6 @@ def correlacion():
     r = sum_product_deviations / ((len(x) - 1) * std_x * std_y)
     return r
 
-# 5. Probabilidades de ladrones detenidos
 def probabilidad_condicional():
     hombres_primera_ofensa = 60
     hombres_reincidente = 70
@@ -65,7 +64,6 @@ def probabilidad_condicional():
 
     return (p_hombre, p_po_hombre)
 
-# Respuestas a preguntas
 def problema_especifico():
     return """
     El problema específico es cuando se requiere predecir valores futuros no conocibles, a partir de un gran conjunto de datos.
