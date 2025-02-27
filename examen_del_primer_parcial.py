@@ -10,8 +10,8 @@ Original file is located at
 import numpy as np
 
 # Importante: verifica que tu nombre y número de matrícula esten correctos
-nombre = ""
-numero_de_matricula = 000000
+nombre = "María Jaqueline Romero García"
+numero_de_matricula = 173846
 fecha = '2025-02-26'
 
 """1.   El 30 de junio de 1992, la capitalización de mercados de valores del Pacífico y Asia fue:
@@ -30,15 +30,23 @@ Australia | 203
 
 * a) Encuentre la media aritmética de los datos
 * b) Encuentre la mediana de los datos
-* c) Encuentre la moda de los datos
-* e) Encuentre la desviación estándar de los datos
+* c) Encuentre la desviación estándar de los datos
 
 regrese una tupla en el siguiente orden:
-(media, mediana, moda, desv_est)
+(media, mediana, desv_est)
 """
 
 def capitalizacion():
-    pass
+
+    capitalizaciones = [17, 21, 44, 50, 79, 86, 140, 178, 203]
+
+    media = np.mean(capitalizaciones)
+    mediana = np.median(capitalizaciones)
+    desviacionstd = np.std(capitalizaciones)
+
+    return(media, mediana, desviacionstd)
+
+capitalizacion()
 
 """2.    La aistencia a los 10 últimos partidos en casa de las Águilas de Baltimore fue la siguiente:
 
@@ -55,17 +63,35 @@ Regrese una tupla con el siguiente orden:
 """
 
 def asistencia_dispersion():
-    pass
+
+    asis  = [20100, 24500, 31600, 28400, 49500, 19350, 25600, 30600, 11300, 28560]
+
+    maximo = np.max(asis)
+    minimo = np.min(asis)
+    rango = maximo - minimo
+    varianza = np.var(asis)
+    desviacionstd = np.std(asis)
+
+    return(rango, varianza, desviacionstd)
+
+asistencia_dispersion()
 
 """3.    Genere un histograma de las siguientes calificaciones en el examen parcial:
 
 7.9, 7.8, 7.8, 6.7, 7.6, 8.7, 8.5, 7.3, 6.6, 9.9, 8.4, 7.2, 6.6, 5.7, 9.4, 8.4, 7.2, 6.3, 5.1, 4.8, 5.0, 6.1, 7.1, 8.2, 9.3, 10.0, 8.9
 
-Nota: regrese el histograma generado con la función de numpy, no genere la gráfica
+Nota: regrese el histograma generado con la función de numpy con 10 bins, no genere la gráfica
 """
 
 def histograma_np():
-    pass
+
+    calif = [7.9, 7.8, 7.8, 6.7, 7.6, 8.7, 8.5, 7.3, 6.6, 9.9, 8.4, 7.2, 6.6, 5.7, 9.4, 8.4, 7.2, 6.3, 5.1, 4.8, 5.0, 6.1, 7.1, 8.2, 9.3, 10.0, 8.9]
+
+    hist = np.histogram(calif, bins=10)
+
+    return hist
+
+histograma_np()
 
 """4.    Analiza la correlación entre los datos de Tamaño y Precio y
 
@@ -87,7 +113,15 @@ Regresa el coeficiente de Pearson
 """
 
 def correlacion():
-    pass
+    tamanio = [100, 120, 140, 160, 180, 200, 220, 240, 260, 280]
+    precio = [1305710, 1658277, 1894167, 2136552, 2298267, 2553624, 2780503, 3289726, 3472743, 3779477]
+
+    correlacion_matrix = np.corrcoef(tamanio, precio)
+    coef_correlacion = correlacion_matrix[0, 1]
+
+    return coef_correlacion
+
+correlacion()
 
 """5.        La tienda de departamentso Friendly ha sido objeto de muchos robos durante el último mes; pero debido al aumento a las medidas de seguridad, se han detenido 250 ladrones. Se registró el sexo de cada ladrón; también se anotó si se trataba de un primer delito o era reincidente. Los datos se resumen en la siguiente tabla.
 
@@ -105,7 +139,13 @@ Regrese ambos datos en una tupla con el siguiente orden
 """
 
 def probabilidad_condicional():
-    pass
+
+    p_hombre = (60 + 70) / (60 + 70 + 44 + 76)
+    p_po_hombre = 60 / (60 + 70)
+
+    return(p_hombre, p_po_hombre)
+
+probabilidad_condicional()
 
 """Contesta las siguientes preguntas
 
@@ -122,14 +162,37 @@ Objetivos del Proyecto:
 Recolección de Datos:
 
 10.    ¿Qué tipo de datos se necesitarán para este proyecto?
+
+Regresa cadenas de texto con tu respuesta.
 """
 
 def problema_especifico():
-    pass
+    return '''Conocer las causas de abandono escolar en la universidad.
+    ¿Porque?, ¿Hay relación entre la causa y el rendimiento academico del alumno?
+    ¿Podemos predecir cuando un alumno va a abandonar la universidad? ¿Hay relación
+    entre la materia y el rendimiento academico?
+    '''
 
 def importancia():
-    pass
+    return '''Quizá con un análisis de estos datos se podrian tomar medidas en
+    cuanto a que materias son las más conflictivas para brindar apoyo a los alumnos
+    Anticipar cuando un alumno esta en peligro de abandonar la universidad para tomar su caso,
+    analizarlo y evitar que suceda.
+    '''
 
+def objetivos():
+    return '''Objetivos: Análizar las relaciones entre el abandono academico y el rendimiento academico,
+    motivos personales, etc.
+
+    Resultados: Conocer las causas de abandono escolar en la universidad de manera que se pueda predecir un posible abandono y evitarlo.
+    usar los datos recolectados para tomar decisiones informadas.
+    '''
+
+def tipo_de_datos():
+    return '''Historiales academicos actuales, pasados y principalmente de aquellos que hayan abandonado la universidad.
+    Encuestas dirigidad a la comunidad en general para ver porque se da el abandono o porque abandonarian
+    la universidad.
+    '''
 def objetivos():
     pass
 
