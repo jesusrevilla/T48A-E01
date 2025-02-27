@@ -41,16 +41,10 @@ def capitalizacion():
 
   # Media
   mean = np.mean(data)
-  print(f"Media: {mean}")
-
   # Mediana
   median = np.median(data)
-  print(f"Mediana: {median}")
-
   # Desviación estándar
   std_dev = np.std(data)
-  print(f"Desviación estándar: {std_dev}")
-
   return (mean, median, std_dev)
 capitalizacion()
 
@@ -71,14 +65,9 @@ Regrese una tupla con el siguiente orden:
 def asistencia_dispersion():
   # Desviación estándar
   asistencia= np.array([20100, 24500, 31600, 28400, 49500, 19350, 25600, 30600, 11300, 28560])
-
   range = np.ptp(asistencia)
-
   std_dev = np.std(asistencia)
-
-  # Varianza
   variance = np.var(asistencia)
-
   return (range, variance, std_dev)
 asistencia_dispersion()
 
@@ -90,9 +79,9 @@ Nota: regrese el histograma generado con la función de numpy con 10 bins, no ge
 """
 
 def histograma_np():
-  calificaciones = np.array([7.9, 7.8, 7.8, 6.7, 7.6, 8.7, 8.5, 7.3, 6.6, 9.9, 8.4, 7.2, 6.6, 5.7, 9.4, 8.4, 7.2, 6.3, 5.1, 4.8, 5.0, 6.1, 7.1, 8.2, 9.3, 10.0, 8.9])
-  hist, bins = np.histogram(calificaciones, bins=10)
-  return hist
+  calificaciones_parciales = np.array([7.9, 7.8, 7.8, 6.7, 7.6, 8.7, 8.5, 7.3, 6.6, 9.9, 8.4, 7.2, 6.6, 5.7, 9.4, 8.4, 7.2, 6.3, 5.1, 4.8, 5.0, 6.1, 7.1, 8.2, 9.3, 10.0, 8.9])
+  histograma = np.histogram(calificaciones_parciales, bins=10)
+  return histograma
 histograma_np()
 
 """4.    Analiza la correlación entre los datos de Tamaño y Precio y
