@@ -152,13 +152,22 @@ Regresa cadenas de texto con tu respuesta.
 """
 
 def problema_especifico():
-    pass
+    return '''Analizar y optimizar el proceso de soporte técnico para reducir el tiempo de resolución de tickets y mejorar la satisfacción del cliente.'''
 
 def importancia():
-    pass
+    return '''  Para aumentar la eficiencia del equipo de soporte, mejorar la experiencia del cliente y reducir los costos operativos asociados
+                con el soporte técnico. '''
 
 def objetivos():
-    pass
+    return ''' - Identificar los tipos de problemas más comunes
+               - Predecir los tiempos de resolución en función de la complejidad del problema
+               - Desarrollar estrategias para optimizar el flujo de trabajo del soporte técnico
+
+               Se espera obtener un modelo predictivo para gestionar los tiempos de resolución de tickets, recomendaciones para
+               optimizar el flujo de trabajo del soporte técnico, una reducción significativa en los tiempos de resolución, informes y
+               dashboards con métricas clave en tiempo real todo lo cual contribuirá a mejorar la eficiencia del soporte técnico y
+               aumentar la satisfacción del cliente. '''
 
 def tipo_de_datos():
-    pass
+    return '''  Se necesitarán datos sobre los tickets incluyendo el tipo de problema, el tiempo de resolución, la prioridad del ticket
+                y cualquier otro dato relevante que pueda influir en la eficiencia del proceso de soporte. '''
