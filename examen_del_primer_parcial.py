@@ -41,7 +41,6 @@ def capitalizacion():
     capitalizaciones = np.array([17, 21, 44, 50, 79, 86, 140, 178, 203])
     media = np.mean(capitalizaciones)
     mediana = np.median(capitalizaciones)
-    moda = int(np.bincount(capitalizaciones).argmax())  # La moda con np.bincount
     desv_est = np.std(capitalizaciones, ddof=0)
     return (media, mediana, moda, desv_est)
 
