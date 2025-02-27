@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 
 # Importante: verifica que tu nombre y número de matrícula estén correctos
 nombre = "César Alejandro Cerrillo Domínguez"
