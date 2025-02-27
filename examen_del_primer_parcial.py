@@ -96,12 +96,10 @@ Nota: regrese el histograma generado con la función de numpy con 10 bins, no ge
 """
 
 def histograma_np():
-  data=[7.9, 7.8, 7.8, 6.7, 7.6, 8.7, 8.5, 7.3, 6.6, 9.9, 8.4, 7.2, 6.6, 5.7, 9.4, 8.4, 7.2, 6.3, 5.1, 4.8, 5.0, 6.1, 7.1, 8.2, 9.3, 10.0, 8.9]
-  # Dataframe
-  df_data = pd.DataFrame([data])
+  data=np.array([7.9, 7.8, 7.8, 6.7, 7.6, 8.7, 8.5, 7.3, 6.6, 9.9, 8.4, 7.2, 6.6, 5.7, 9.4, 8.4, 7.2, 6.3, 5.1, 4.8, 5.0, 6.1, 7.1, 8.2, 9.3, 10.0, 8.9])
 
   # Histograma
-  histogramaCali = plt.hist(df_data.iloc[0], bins=10)
+  histogramaCali = plt.hist(data, bins=10)
   return histogramaCali
 
 histograma_np()
