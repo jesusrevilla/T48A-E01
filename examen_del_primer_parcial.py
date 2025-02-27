@@ -173,28 +173,34 @@ def problema_especifico():
     entre la materia y el rendimiento academico?
     '''
 
+problema_especifico()
+
 def importancia():
-    return '''Quizá con un análisis de estos datos se podrian tomar medidas en
+    res = '''Quizá con un análisis de estos datos se podrian tomar medidas en
     cuanto a que materias son las más conflictivas para brindar apoyo a los alumnos
     Anticipar cuando un alumno esta en peligro de abandonar la universidad para tomar su caso,
     analizarlo y evitar que suceda.
     '''
+    return res
+
+importancia()
 
 def objetivos():
-    return '''Objetivos: Análizar las relaciones entre el abandono academico y el rendimiento academico,
+    res = '''Objetivos: Análizar las relaciones entre el abandono academico y el rendimiento academico,
     motivos personales, etc.
 
     Resultados: Conocer las causas de abandono escolar en la universidad de manera que se pueda predecir un posible abandono y evitarlo.
     usar los datos recolectados para tomar decisiones informadas.
     '''
+    return res
+
+objetivos()
 
 def tipo_de_datos():
-    return '''Historiales academicos actuales, pasados y principalmente de aquellos que hayan abandonado la universidad.
+    res = '''Historiales academicos actuales, pasados y principalmente de aquellos que hayan abandonado la universidad.
     Encuestas dirigidad a la comunidad en general para ver porque se da el abandono o porque abandonarian
     la universidad.
     '''
-def objetivos():
-    pass
+    return res
 
-def tipo_de_datos():
-    pass
+tipo_de_datos()
