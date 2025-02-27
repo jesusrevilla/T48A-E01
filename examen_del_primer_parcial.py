@@ -84,10 +84,10 @@ Nota: regrese el histograma generado con la función de numpy con 10 bins, no ge
 """
 
 def histograma_np():
-  arr=([7.9, 7.8, 7.8, 6.7, 7.6, 8.7, 8.5, 7.3, 6.6, 9.9, 8.4, 7.2, 6.6, 5.7, 9.4, 8.4, 7.2, 6.3, 5.1, 4.8, 5.0, 6.1, 7.1, 8.2, 9.3, 10.0, 8.9])
-  hist, bin_edges = np.histogram(arr, bins=10)
-  print(hist)
-  return
+  calificaciones_parciales = np.array([7.9, 7.8, 7.8, 6.7, 7.6, 8.7, 8.5, 7.3, 6.6, 9.9, 8.4, 7.2, 6.6, 5.7, 9.4, 8.4, 7.2, 6.3, 5.1, 4.8, 5.0, 6.1, 7.1, 8.2, 9.3, 10.0, 8.9])
+  histograma = np.histogram(calificaciones_parciales, bins=10)
+  return histograma
+  histograma_np()
 
 histograma_np()
 
