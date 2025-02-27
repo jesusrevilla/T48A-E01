@@ -29,26 +29,11 @@ data = np.array([7.9, 7.8, 7.8, 6.7, 7.6, 8.7, 8.5, 7.3, 6.6, 9.9, 8.4, 7.2, 6.6
 def histograma_np():
     return np.histogram(data, bins=10)
 
-# 4. Correlación entre Tamaño y Precio
 def correlacion():
-    x = np.array([100, 120, 140, 160, 180, 200, 220, 240, 260, 280])
-    y = np.array([1305710, 1658277, 1894167, 2136552, 2298267, 2553624, 2780503, 3289726, 3472743, 3779477])
-
-    mean_x = np.mean(x)
-    mean_y = np.mean(y)
-
-    deviation_x = x - mean_x
-    deviation_y = y - mean_y
-
-    product_deviations = deviation_x * deviation_y
-
-    sum_product_deviations = np.sum(product_deviations)
-
-    std_x = np.std(x)
-    std_y = np.std(y)
-
-    r = sum_product_deviations / ((len(x) - 1) * std_x * std_y)
-    return r
+    tamaño = np.array([100, 120, 140, 160, 180, 200, 220, 240, 260, 280])
+    precio = np.array([1305710, 1658277, 1894167, 2136552, 2298267, 2553624, 2780503, 3289726, 3472743, 3779477])
+    cor = np.corrcoef(tamaño, precio)
+    return cor[0,1]
 
 def probabilidad_condicional():
     hombres_primera_ofensa = 60
