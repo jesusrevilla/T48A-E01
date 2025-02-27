@@ -8,7 +8,6 @@ Original file is located at
 """
 
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
 
 # Importante: verifica que tu nombre y número de matrícula esten correctos
