@@ -37,12 +37,12 @@ regrese una tupla en el siguiente orden:
 """
 
 def capitalizacion():
-    data = np.array([17, 21, 44, 50, 79, 86, 140, 178, 203])
-    media = np.mean(data)
-    mediana = np.median(data)
+    datos = [17, 21, 44, 50, 79, 86, 140, 178, 203]
+    media = np.mean(datos)
+    mediana = np.median(datos)
 
-    desv_est = np.std(data)
-    return (media, mediana, moda, desv_est)
+    desv_est = np.std(datos)
+    return (media, mediana, desv_est)
 
 """2.    La aistencia a los 10 últimos partidos en casa de las Águilas de Baltimore fue la siguiente:
 
