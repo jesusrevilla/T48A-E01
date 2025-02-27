@@ -40,7 +40,6 @@ def capitalizacion():
     datos = [17, 21, 44, 50, 79, 86, 140, 178, 203]
     media = np.mean(datos)
     mediana = np.median(datos)
-
     desv_est = np.std(datos)
     return (media, mediana, desv_est)
 
