@@ -37,8 +37,7 @@ regrese una tupla en el siguiente orden:
 """
 
 def capitalizacion():
-    cap_arr=np.array
-    cap_arr={17,21,44,50,79,86,140,178,203}
+    cap_arr=np.array([17,21,44,50,79,86,140,178,203])
     media=np.mean(cap_arr)
     mediana=np.median(cap_arr)
     desv_est=np.std(cap_arr)
@@ -59,8 +58,7 @@ Regrese una tupla con el siguiente orden:
 """
 
 def asistencia_dispersion():
-  asis=np.array;
-  asis={20100, 24500, 31600, 28400, 49500, 19350, 25600, 30600, 11300, 28560}
+  asis=np.array([20100, 24500, 31600, 28400, 49500, 19350, 25600, 30600, 11300, 28560])
   rango=np.ptp(asis)
   varianza=np.var(asis)
   desv_est=np.std(asis)
@@ -74,8 +72,7 @@ Nota: regrese el histograma generado con la función de numpy con 10 bins, no ge
 """
 
 def histograma_np():
-    cal=np.array;
-    cal={7.9, 7.8, 7.8, 6.7, 7.6, 8.7, 8.5, 7.3, 6.6, 9.9, 8.4, 7.2, 6.6, 5.7, 9.4, 8.4, 7.2, 6.3, 5.1, 4.8, 5.0, 6.1, 7.1, 8.2, 9.3, 10.0, 8.9}
+    cal=np.array([7.9, 7.8, 7.8, 6.7, 7.6, 8.7, 8.5, 7.3, 6.6, 9.9, 8.4, 7.2, 6.6, 5.7, 9.4, 8.4, 7.2, 6.3, 5.1, 4.8, 5.0, 6.1, 7.1, 8.2, 9.3, 10.0, 8.9])
     hist=np.histogram(cal,bins=10)
     return hist
 
@@ -99,10 +96,8 @@ Regresa el coeficiente de Pearson
 """
 
 def correlacion():
-    tam=np.array;
-    pre=np.array;
-    tam={100,120,140,160,180,200,220,240,260,280}
-    pre={1305710,1658277,1894167,2136552,2298267,2553624,2780503,3289726,3472743,3779477}
+    tam=np.array([100,120,140,160,180,200,220,240,260,280]);
+    pre=np.array([1305710,1658277,1894167,2136552,2298267,2553624,2780503,3289726,3472743,3779477])
     corr=np.corrcoef(tam,pre)
     return corr
 
