@@ -114,8 +114,8 @@ def correlacion():
     sum_product_deviations = np.sum(product_deviations)
 
     # Calcular la desviación estándar
-    std_x = np.std(x, ddof=1)
-    std_y = np.std(y, ddof=1)
+    std_x = np.std(tamano, ddof=1)
+    std_y = np.std(precio, ddof=1)
 
     # Calcular el coeficiente de correlación de Pearson
     pearson = sum_product_deviations / ((len(tamano) - 1) * std_x * std_y)
