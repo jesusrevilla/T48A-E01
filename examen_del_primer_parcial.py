@@ -8,7 +8,6 @@ Original file is located at
 """
 
 import numpy as np
-import matplotlib.pyplot as plt
 
 # Importante: verifica que tu nombre y número de matrícula esten correctos
 nombre = "Uriel Montejano Briano"
@@ -98,7 +97,7 @@ def histograma_np():
   data=np.array([7.9, 7.8, 7.8, 6.7, 7.6, 8.7, 8.5, 7.3, 6.6, 9.9, 8.4, 7.2, 6.6, 5.7, 9.4, 8.4, 7.2, 6.3, 5.1, 4.8, 5.0, 6.1, 7.1, 8.2, 9.3, 10.0, 8.9])
 
   # Histograma
-  histogramaCali = plt.hist(data, bins=10)
+  histogramaCali = np.histogram(data, bins=10)
   return histogramaCali
 
 histograma_np()
@@ -168,8 +167,8 @@ Regrese ambos datos en una tupla con el siguiente orden
 """
 
 def probabilidad_condicional():
-  dfHombres = pd.DataFrame([60, 44])
-  dfMujeres = pd.DataFrame([70, 76])
+  dfHombres = np.array([60, 44])
+  dfMujeres = np.array([70, 76])
 
   evento_A = dfHombres
   evento_B = dfMujeres
@@ -180,7 +179,7 @@ def probabilidad_condicional():
   # Probabilidad condicional
   prob_intersecciones_AB = np.mean(evento_A & evento_B)
 
-  prob_AB = prob_intersecciones_AB / np.mean(dfMujeres.values)
+  prob_AB = prob_intersecciones_AB / np.mean(dfMujeres)
   return prob_AB
 
 probabilidad_condicional()
