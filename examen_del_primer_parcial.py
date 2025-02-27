@@ -8,7 +8,6 @@ Original file is located at
 """
 
 import numpy as np
-import pandas as pd
 
 # Importante: verifica que tu nombre y número de matrícula esten correctos
 nombre = "Christian Aarón Zavala Sánchez"
@@ -38,19 +37,9 @@ regrese una tupla en el siguiente orden:
 """
 
 def capitalizacion():
-
-    data = {
-        'País': ['Filipinas', 'Indonesia', 'Tailandia', 'Singapur', 'Malasia', 'Corea del Sur', 'Taiwan', 'Hong Kong', 'Australia'],
-        'Capitalizacion': [17, 21, 44, 50, 79, 86, 140, 178, 203]
-    }
-
-    df = pd.DataFrame(data)
-
-
-
-    media_aritmetica = np.mean(df['Capitalizacion'])
-    mediana = np.median(df['Capitalizacion'])
-    desviacion_estandar = np.std(df['Capitalizacion'])
+    media_aritmetica = np.mean([17, 21, 44, 50, 79, 86, 140, 178, 203])
+    mediana = np.median([17, 21, 44, 50, 79, 86, 140, 178, 203])
+    desviacion_estandar = np.std([17, 21, 44, 50, 79, 86, 140, 178, 203])
 
     return (media_aritmetica, mediana, desviacion_estandar)
 
@@ -114,15 +103,8 @@ Regresa el coeficiente de Pearson
 
 def correlacion():
 
-    data = {
-        'Tamaño': [100, 120, 140, 160, 180, 200, 220, 240, 260, 280],
-        'Precio': [1305710, 1658277, 1894167, 2136552, 2298267, 2553624, 2780503, 3289726, 3472743, 3779477]
-    }
-
-    df = pd.DataFrame(data)
-
-    x_values = df['Tamaño']
-    y_values = df['Precio']
+    x_values = [100, 120, 140, 160, 180, 200, 220, 240, 260, 280]
+    y_values = [1305710, 1658277, 1894167, 2136552, 2298267, 2553624, 2780503, 3289726, 3472743, 3779477]
 
     coeficiente_correlacion = np.corrcoef(x_values, y_values)[0, 1]
 
@@ -173,14 +155,13 @@ Regresa cadenas de texto con tu respuesta.
 def problema_especifico():
   return """
     ¿Cuál es el problema específico que se desea resolver con la minería de datos?
-      El mayor problema de la mineria de datos es el entendimiento y aclaracion de los datos, debido a que se centra en obtener resultados estadisticos,
-      por lo que se hacen estrategias de limpieza de datos para obtener resultados mas precisos.
+      Quiza me interesaria obtener el modelo predictivo de algun elemento en venta, por ejemplo una vivienda, que exista una forma de por lo datos que tiene, pueda obtener un precio mas preciso.
     """
 
 def importancia():
   return """
     ¿Por qué es importante resolver este problema?
-      Porque obtener resultados mas precisos nos ayudan a tomar las desiciones mas coherentes en una empresa, siguiendo las estadisticas o predicciones que se generan gracias a la mineria de datos.
+      Automatizaria la evaluacion de precios de elementos ya que se podria apricar a cualquier producto
   """
 
 def objetivos():
@@ -194,6 +175,5 @@ def objetivos():
 def tipo_de_datos():
   return """
     ¿Qué tipo de datos se necesitarán para este proyecto?
-      Para un proyecto asi, se necesita un dataset de los datos necesarios para aplicar las tecnicas de mineria de datos, analisis de datos y ciencia de datos.
-      Estos pueden ser los tipicos valores necesarios en computacion (Cadenas, enteros o flotantes).
+      Un dataset con diferentes conjunto de datos que me permitan entrenar algun modelo predictivo.
   """
