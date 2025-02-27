@@ -108,7 +108,7 @@ def correlacion():
 
   tamaño = np.array([100,120,140,160,180,200,220,240,260,280])
   precio = np.array([1305710,1658277,1894167,2136552,2298267,2553624,2780503,3289726,3472743,3779477])
-  correlacion = np.corrcoef(tamaño,precio)
+  correlacion = np.corrcoef(tamaño,precio)[0,1]
   return correlacion
 
 correlacion().__repr__()
