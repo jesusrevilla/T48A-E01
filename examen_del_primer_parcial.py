@@ -42,7 +42,7 @@ def capitalizacion():
     media = np.mean(capitalizaciones)
     mediana = np.median(capitalizaciones)
     desv_est = np.std(capitalizaciones, ddof=0)
-    return (media, mediana, moda, desv_est)
+    return (media, mediana, desv_est)
 
 """2.    La aistencia a los 10 últimos partidos en casa de las Águilas de Baltimore fue la siguiente:
 
