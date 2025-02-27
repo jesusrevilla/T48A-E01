@@ -74,8 +74,8 @@ Nota: regrese el histograma generado con la función de numpy con 10 bins, no ge
 def histograma_np():
     calificaciones = np.array([7.9, 7.8, 7.8, 6.7, 7.6, 8.7, 8.5, 7.3, 6.6, 9.9, 8,4, 7.2, 6.6, 5.7, 9.4, 8.4, 7.2, 6.3, 5.1, 4.8, 5.0, 6.1, 7.1, 8.2, 9.3, 10.0, 8.9])
     histograma = np.histogram(calificaciones, bins=10)
-    hist = np.array([3, 1, 2, 3, 4, 4, 3, 3, 2, 2]), np.array([4.8, 5.32, 5.84, 6.36, 6.88, 7.4, 7.92, 8.44, 8.96, 9.48, 10.])
-    return hist
+    return histograma
+histograma_np()
 
 """4.    Analiza la correlación entre los datos de Tamaño y Precio y
 
@@ -99,8 +99,9 @@ Regresa el coeficiente de Pearson
 def correlacion():
     tamaño = np.array([100, 120, 140, 160, 180, 200, 220, 240, 260, 280])
     precio = np.array([1305710, 1658277, 1894167, 2136552, 2298267, 2553624, 2780503, 3289726, 3472743, 3779477])
-    cor = np.corrcoef(tamaño, precio)
-    return cor[0,1]
+    correlacion = np.corrcoef(tamaño, precio)
+    return correlacion
+correlacion()
 
 """5.        La tienda de departamentso Friendly ha sido objeto de muchos robos durante el último mes; pero debido al aumento a las medidas de seguridad, se han detenido 250 ladrones. Se registró el sexo de cada ladrón; también se anotó si se trataba de un primer delito o era reincidente. Los datos se resumen en la siguiente tabla.
 
