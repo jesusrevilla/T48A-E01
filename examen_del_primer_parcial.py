@@ -123,11 +123,15 @@ Regrese ambos datos en una tupla con el siguiente orden
 """
 
 def probabilidad_condicional():
-    x = np.array([60, 44])
-    y = np.array([70, 76])
-    p_hombre = np.sum(x) / np.sum(y)
-    p_po_hombre = x[0] / np.sum(x)
+    total_hombres = 60 + 70  # 130
+    total_mujeres = 44 + 76  # 120
+    total_detenidos = total_hombres + total_mujeres  # 250
+    
+    p_hombre = total_hombres / total_detenidos  # 130 / 250 = 0.52
+    p_po_hombre = 60 / total_hombres  # 60 / 130 = 0.4615
+    
     return (p_hombre, p_po_hombre)
+
 
 probabilidad_condicional()
 
