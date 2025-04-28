@@ -10,8 +10,8 @@ Original file is located at
 import numpy as np
 
 # Importante: verifica que tu nombre y número de matrícula esten correctos
-nombre = ""
-numero_de_matricula = 000000
+nombre = "Rodolfo Gutiérrez Hernández"
+numero_de_matricula = 179598
 fecha = '2025-02-26'
 
 """1.   El 30 de junio de 1992, la capitalización de mercados de valores del Pacífico y Asia fue:
@@ -30,15 +30,20 @@ Australia | 203
 
 * a) Encuentre la media aritmética de los datos
 * b) Encuentre la mediana de los datos
-* c) Encuentre la moda de los datos
-* e) Encuentre la desviación estándar de los datos
+* c) Encuentre la desviación estándar de los datos
 
 regrese una tupla en el siguiente orden:
-(media, mediana, moda, desv_est)
+(media, mediana, desv_est)
 """
 
 def capitalizacion():
-    pass
+    x = np.array([17, 21, 44, 50, 79, 86, 140, 178, 203])
+    media = np.mean(x)
+    mediana = np.median(x)
+    desv_est = np.std(x)
+    return (media, mediana, desv_est)
+
+capitalizacion()
 
 """2.    La aistencia a los 10 últimos partidos en casa de las Águilas de Baltimore fue la siguiente:
 
@@ -55,17 +60,26 @@ Regrese una tupla con el siguiente orden:
 """
 
 def asistencia_dispersion():
-    pass
+    x = np.array([20100,24500,31600,28400,49500,19350,25600,30600,11300,28560])
+    rango = np.max(x) - np.min(x)
+    varianza = np.var(x)
+    desv_est = np.std(x)
+    return (rango, varianza, desv_est)
+
+asistencia_dispersion()
 
 """3.    Genere un histograma de las siguientes calificaciones en el examen parcial:
 
 7.9, 7.8, 7.8, 6.7, 7.6, 8.7, 8.5, 7.3, 6.6, 9.9, 8.4, 7.2, 6.6, 5.7, 9.4, 8.4, 7.2, 6.3, 5.1, 4.8, 5.0, 6.1, 7.1, 8.2, 9.3, 10.0, 8.9
 
-Nota: regrese el histograma generado con la función de numpy, no genere la gráfica
+Nota: regrese el histograma generado con la función de numpy con 10 bins, no genere la gráfica
 """
 
 def histograma_np():
-    pass
+    x = np.array([7.9, 7.8, 7.8, 6.7, 7.6, 8.7, 8.5, 7.3, 6.6, 9.9, 8.4, 7.2, 6.6, 5.7, 9.4, 8.4, 7.2, 6.3, 5.1, 4.8, 5.0, 6.1, 7.1, 8.2, 9.3, 10.0, 8.9])
+    return np.histogram(x, bins=10)
+
+histograma_np()
 
 """4.    Analiza la correlación entre los datos de Tamaño y Precio y
 
@@ -87,7 +101,11 @@ Regresa el coeficiente de Pearson
 """
 
 def correlacion():
-    pass
+    x = np.array([100, 120, 140, 160, 180, 200, 220, 240, 260, 280])
+    y = np.array([1305710,1658277,1894167,2136552,2298267,2553624,2780503,3289726,3472743,3779477])
+    return np.corrcoef(x, y)[0, 1]
+
+correlacion()
 
 """5.        La tienda de departamentso Friendly ha sido objeto de muchos robos durante el último mes; pero debido al aumento a las medidas de seguridad, se han detenido 250 ladrones. Se registró el sexo de cada ladrón; también se anotó si se trataba de un primer delito o era reincidente. Los datos se resumen en la siguiente tabla.
 
@@ -105,7 +123,17 @@ Regrese ambos datos en una tupla con el siguiente orden
 """
 
 def probabilidad_condicional():
-    pass
+    total_hombres = 60 + 70  # 130
+    total_mujeres = 44 + 76  # 120
+    total_detenidos = total_hombres + total_mujeres  # 250
+    
+    p_hombre = total_hombres / total_detenidos  # 130 / 250 = 0.52
+    p_po_hombre = 60 / total_hombres  # 60 / 130 = 0.4615
+    
+    return (p_hombre, p_po_hombre)
+
+
+probabilidad_condicional()
 
 """Contesta las siguientes preguntas
 
@@ -122,16 +150,27 @@ Objetivos del Proyecto:
 Recolección de Datos:
 
 10.    ¿Qué tipo de datos se necesitarán para este proyecto?
+
+Regresa cadenas de texto con tu respuesta.
 """
 
 def problema_especifico():
-    pass
+   return("""Identificar patrones en los resultados y estadisticas en mis partidos de futbol""")
+
+problema_especifico()
 
 def importancia():
-    pass
+    return("""para identificar las zonas del juego en las tengo debilidades """)
+
+importancia()
 
 def objetivos():
-    pass
+    return("""identificar errores y para saber donde hay que mejorar.
+    Al final espero poder tener una visión mas clara de mi juego """)
+
+objetivos()
 
 def tipo_de_datos():
-    pass
+    return("""Estadisticas como goles por partido, faltas por partido, perdidas de balón, minutos jugados""")
+
+tipo_de_datos()
