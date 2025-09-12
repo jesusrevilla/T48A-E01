@@ -98,7 +98,7 @@ def probabilidad_condicional():
 probabilidad_condicional()
 
 def problema_especifico():
-  texto="El análisis masivo de datos en un proceso de producción consiste en la recopilación, organización, clasificación y aplicación de métodos estadísticos para comprender mejor la información y transformarla en conocimiento útil."
+  texto=""
   return texto
 
 def importancia():
