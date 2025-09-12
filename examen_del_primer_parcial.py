@@ -41,7 +41,7 @@ def capitalizacion():
     
     desv_est = np.std(data)
 
-    return (media, mediana, moda, desv_est)
+    return (media, mediana, desv_est)
 
 capitalizacion()
 
