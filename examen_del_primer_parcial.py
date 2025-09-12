@@ -8,7 +8,6 @@ Original file is located at
 """
 
 import numpy as np
-import pandas as pd
 
 # Importante: verifica que tu nombre y número de matrícula esten correctos
 
@@ -20,7 +19,7 @@ def capitalizacion():
     mercadoValores = np.array([17, 21, 44, 50, 79, 86, 140, 178, 203])
     media = np.mean(mercadoValores)
     mediana = np.median(mercadoValores)
-    moda = pd.Series(mercadoValores).mode()[0]
+    moda = 0
     desv_est = np.std(mercadoValores)
     return (media, mediana, moda, desv_est)
 
