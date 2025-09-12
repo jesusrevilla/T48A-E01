@@ -7,27 +7,19 @@ fecha = '2025-11-09'
 
 
 #2. El 30 de junio de 1992, la capitalización de mercados de valores del Pacífico y Asia fue....
-#a)Encuentre la media aritmetica de los datos
-#b)Encuentre la mediana de los datos
-#c)Encuentre la moda de los datos
-#d)Encuentre la desviacion estandar de los datos
-#Regrese una tupla en el siguiente orden.
-
 def capitalizacion():
-    dat = np.array([17, 21, 44, 50, 79, 86, 140, 178, 203], dtype=float)
-    media = float(np.mean(dat))
-    mediana = float(np.median(dat))
-    valores, cuentas = np.unique(dat, return_counts=True)
-    max_cuenta = np.max(cuentas)
-    if max_cuenta == 1:
-        moda = np.nan
-    else:
-        moda = float(valores[np.argmax(cuentas)])
-    desv_est = float(np.std(dat, ddof=0))
-  
-    return (media, mediana, moda, desv_est)
-capitalizacion()
+    datos = [17, 21, 44, 50, 79, 86, 140, 178, 203]
 
+    media = np.mean(datos)
+    mediana = np.median(datos)
+    desviacion = np.std(datos, ddof=1) 
+
+    desviacion = np.std(datos)  # Poblacional (ddof=0)
+    return (media, mediana, desviacion)
+
+
+resultado = capitalizacion()
+print(resultado)
 
 #3. Utiliza los datos proporcionados para calcular lo que se te solicita en el docstring
 
