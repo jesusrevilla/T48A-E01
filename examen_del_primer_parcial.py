@@ -27,3 +27,19 @@ def capitalizacion():
  
 capitalizacion()
 
+def asistencia_dispersion():
+  Aguilas =[20100, 24500, 31600, 28400, 49500, 19350, 25600, 30600, 11300, 28560]
+  # Rango
+  Rango=np.ptp(Aguilas)
+ 
+  # Varianza
+  Varianza=np.var(Aguilas)
+ 
+  # Desviación estandar
+  DevStd=np.std(Aguilas)
+ 
+  datosAguilas=(Rango, Varianza, DevStd)
+ 
+  return datosAguilas
+ 
+asistencia_dispersion()
