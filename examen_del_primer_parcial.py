@@ -91,4 +91,4 @@ def resultados():
     return "Se espera que al finalizar el proyecto se pueda concluir con un conocimiento adquirido útil para mí como alumno y poder usarlo en ambitos laborales"
 
 def tipo_de_datos():
-    return "Se necesitarán datos estructurados, semiestructurados, no estructurados, númericos, categóricos, boleanos, de texto y temporales"
+    return "Se necesitarán datos estructurados, semiestructurados, no estructurados, númericos, categóricos, boleanos, de texto y temporales."
