@@ -16,7 +16,7 @@ def capitalizacion():
     mediana = np.median(datos)
     desviacion = np.std(datos, ddof=1) 
     
-    return (media, mediana, moda, desviacion)
+    return (media, mediana, desviacion)
 
 
 resultado = capitalizacion()
