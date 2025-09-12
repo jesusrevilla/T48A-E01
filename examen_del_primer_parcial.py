@@ -12,16 +12,16 @@ def capitalizacion():
   datos =[17, 21, 44, 50, 79, 86, 140, 178, 203]
  
   # Media
-  media = np.mean(data)
+  media = np.mean(datos)
  
   # Mediana
-  mediana = np.median(data)
+  mediana = np.median(datos)
 
   #moda
   moda = 0
   
   # Desviación estándar
-  desv_est = np.std(data)
+  desv_est = np.std(datos)
  
   return (media, mediana, moda, desv_est)
  
