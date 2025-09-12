@@ -7,20 +7,18 @@ numero_de_matricula = 179263
 fecha = '2025-11-09'
 
 def capitalizacion():
-  data =[17, 21, 44, 50, 79, 86, 140, 178, 203]
+  # inserta tu código aquí
+  datos =[17, 21, 44, 50, 79, 86, 140, 178, 203]
  
   # Media
-  mean = np.mean(data)
+  media = np.mean(data)
  
   # Mediana
-  median = np.median(data)
+  mediana = np.median(data)
  
   # Desviación estándar
-  std_dev = np.std(data)
+  desv_est = np.std(data)
  
-  # Tupla
-  tupla_datos=(mean, median, std_dev)
- 
-  return tupla_datos
+  return (media, mediana, moda, desv_est)
  
 capitalizacion()
