@@ -1,7 +1,6 @@
 #1. Importe numpy solo una vez, como se muestra a continuación:
 import numpy as np 
 # Importante: verifica que tu nombre y número de matrícula esten correctos
-
 nombre = "Areli Alejandra Cuevas González"
 numero_de_matricula = 175454
 fecha = '2025-11-09'
