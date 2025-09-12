@@ -18,7 +18,7 @@ def capitalizacion():
   mediana = np.median(data)
 
   #moda
-  moda = "sin moda"
+  moda = 0
   
   # Desviación estándar
   desv_est = np.std(data)
