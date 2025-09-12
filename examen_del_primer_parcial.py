@@ -96,3 +96,16 @@ def probabilidad_condicional():
 
     return (p_hombre, p_po_hombre)
 probabilidad_condicional()
+
+def problema_especifico():
+  texto="El análisis masivo de datos en un proceso de producción consiste en la recopilación, organización, clasificación y aplicación de métodos estadísticos para comprender mejor la información y transformarla en conocimiento útil."
+  return texto
+
+def importancia():
+  texto="Es importante porque, mediante la minería de datos, es posible procesar grandes volúmenes de información, interpretarlos y clasificarlos, generando así resultados que apoyen la toma de decisiones."
+
+def objetivos():
+    
+
+def tipo_de_datos():
+    
