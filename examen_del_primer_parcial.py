@@ -38,7 +38,7 @@ def capitalizacion():
         moda = float(valores[np.argmax(cuentas)])
 
     desv_est = float(np.std(datos_paises, ddof=0)) 
-    return (media, mediana, moda, desv_est)
+    return (media, mediana, desv_est)
 
 #3. Utiliza los datos proporcionados para calcular lo que se te solicita en el docstring
     """
