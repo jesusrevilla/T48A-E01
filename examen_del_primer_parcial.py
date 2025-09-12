@@ -23,7 +23,7 @@ def capitalizacion():
   # Desviación estándar
   desv_est = np.std(datos)
  
-  return (media, mediana, moda, desv_est)
+  return (media, mediana, desv_est)
  
 capitalizacion()
 
