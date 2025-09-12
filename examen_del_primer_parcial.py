@@ -1,6 +1,6 @@
 
 import numpy as np
-
+import pandas as pd
 
 # Importante: verifica que tu nombre y número de matrícula esten correctos
 
