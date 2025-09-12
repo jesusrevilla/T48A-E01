@@ -84,3 +84,15 @@ def correlacion():
   return r
  
 correlacion()
+
+def probabilidad_condicional():
+    total_ladrones = 250
+    hombres_primera_ofensa = 60
+    hombres_reincidente = 70
+    total_hombres = hombres_primera_ofensa + hombres_reincidente
+
+    p_hombre = total_hombres / total_ladrones
+    p_po_hombre = hombres_primera_ofensa / total_hombres
+
+    return (p_hombre, p_po_hombre)
+probabilidad_condicional()
