@@ -1,6 +1,5 @@
 
 import numpy as np
-import pandas as pd
 
 # Importante: verifica que tu nombre y número de matrícula esten correctos
 
@@ -15,7 +14,6 @@ def capitalizacion():
     
     media = np.mean(datos)
     mediana = np.median(datos)
-    moda = pd.Series(datos).mode()[0]  
     desviacion = np.std(datos, ddof=1) 
     
     return (media, mediana, moda, desviacion)
