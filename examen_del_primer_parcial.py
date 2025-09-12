@@ -1,4 +1,4 @@
-#1. Importe numpy solo una vez, como se muestra a continuación:
+#1. Importe numpy solo una vez, como se muestra a continuación: 
 import numpy as np 
 # Importante: verifica que tu nombre y número de matrícula esten correctos
 nombre = "Areli Alejandra Cuevas González"
