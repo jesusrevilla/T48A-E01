@@ -97,15 +97,28 @@ def probabilidad_condicional():
     return (p_hombre, p_po_hombre)
 probabilidad_condicional()
 
+## 7.     ¿Cuál es el problema específico que se desea resolver con la minería de datos?
+## 8.     ¿Por qué es importante resolver este problema?
+
+
+## 9.     ¿Cuáles son los objetivos principales del anteproyecto?
+## 10.     ¿Qué resultados esperas obtener al final del proyecto?
+
+
+## 11.    ¿Qué tipo de datos se necesitarán para este proyecto?
+
 def problema_especifico():
   texto=""
   return texto
 
 def importancia():
-  texto="Es importante porque, mediante la minería de datos, es posible procesar grandes volúmenes de información, interpretarlos y clasificarlos, generando así resultados que apoyen la toma de decisiones."
-
+  texto=""
+  return texto
+  
 def objetivos():
-    
+  texto=""
+  return texto
 
 def tipo_de_datos():
-    
+  texto=""
+  return texto
