@@ -19,7 +19,7 @@ def capitalizacion():
     datos = [17, 21, 44, 50, 79, 86, 140, 178, 203]
     media = np.mean(datos)
     mediana = np.median(datos)
-    desviacion = np.std(datos, ddof=1)  # Desviación estándar muestral
+    desviacion = np.std(datos, ddof=1)
     return (media, mediana, desviacion)
 
 
