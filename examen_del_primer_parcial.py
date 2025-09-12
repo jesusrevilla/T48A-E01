@@ -34,8 +34,10 @@ def capitalizacion():
     media = np.mean(data)
     mediana = np.median(data)
     
-    counter = np.bincount(data)
-    moda = np.argmax(counter)
+    counts = {}
+    for num in data:
+        counts[num] = counts.get(num, 0) + 1
+    moda = max(counts, key=counts.get)
     
     desv_est = np.std(data)
 
