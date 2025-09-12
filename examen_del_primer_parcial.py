@@ -1,3 +1,4 @@
+
 import numpy as np
 
 # Importante: verifica que tu nombre y número de matrícula esten correctos
@@ -15,10 +16,14 @@ def capitalizacion():
  
   # Mediana
   mediana = np.median(data)
- 
+
+  #moda
+  moda = "sin moda"
+  
   # Desviación estándar
   desv_est = np.std(data)
  
   return (media, mediana, moda, desv_est)
  
 capitalizacion()
+
