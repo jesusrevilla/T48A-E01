@@ -20,7 +20,7 @@ def capitalizacion():
     media = np.mean(mercadoValores)
     mediana = np.median(mercadoValores)
     moda = 0
-    desv_est = 0
+    desv_est = np.std(mercadoValores)
     return (media, mediana, moda, desv_est)
 
 capitalizacion()
