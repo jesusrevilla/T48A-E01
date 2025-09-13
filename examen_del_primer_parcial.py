@@ -108,17 +108,17 @@ probabilidad_condicional()
 ## 11.    ¿Qué tipo de datos se necesitarán para este proyecto?
 
 def problema_especifico():
-  texto=""
+  texto="El objetivo principal es optimizar la gestión de recursos bibliográficos mediante el análisis de patrones de uso, preferencias de los usuarios y eficiencia en la circulación de materiales."
   return texto
 
 def importancia():
-  texto=""
+  texto="Resolver estos problemas es crucial para; Mejorar la eficiencia operativa, Personalizar la experiencia del usuario, Incrementar la satisfacción del usuario, Optimizar recursos humanos y financieros"
   return texto
   
 def objetivos():
-  texto=""
+  texto="Los objetivos del anteproyecto son; Recolectar y preparar datos, Aplicar técnicas de minería de datos, Desarrollar modelos predictivos, Generar informes y visualizaciones"
   return texto
 
 def tipo_de_datos():
-  texto=""
+  texto="Se requerirán datos como; Registros de préstamos y devoluciones, Información de usuarios, Datos de reservas, Datos de eventos y actividades, Encuestas de satisfacción"
   return texto
